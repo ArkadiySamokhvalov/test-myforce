@@ -1,0 +1,44 @@
+.marked-list {
+    // .marked-list__text
+    &__text {
+        font-weight: 500;
+        line-height: 145%;
+        margin-bottom: torem(12);
+    }
+
+    // .marked-list__item
+    &__item {
+        position: relative;
+        line-height: torem(19);
+        padding-left: torem(22);
+
+        &:not(:last-child) {
+            margin-bottom: torem(12);
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            transform: translateY(-50%);
+            filter: blur(2px);
+            background-color: $blue;
+            border-radius: 50%;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 1.5px;
+            width: 7px;
+            height: 7px;
+            transform: translateY(-50%);
+            background-color: $white;
+            border-radius: 50%;
+        }
+    }
+}

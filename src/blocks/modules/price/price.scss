@@ -1,0 +1,34 @@
+.price {
+    display: flex;
+    align-items: baseline;
+    max-width: 267px;
+
+    // .price__value
+    &__value {
+        color: $blue;
+        font-weight: 700;
+        font-size: torem(36);
+        line-height: 130%;
+    }
+
+    // .price__currency
+    &__currency {
+        color: $blue;
+        font-size: torem(36);
+        line-height: 130%;
+        font-weight: 700;
+    }
+
+    // .price__per
+    &__per {
+        @include wideSpaceText;
+
+        line-height: 145%;
+
+        &::before {
+            content: "/";
+            margin-left: torem(-6);
+            margin-right: torem(4);
+        }
+    }
+}

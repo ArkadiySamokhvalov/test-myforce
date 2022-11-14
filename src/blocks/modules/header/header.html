@@ -1,0 +1,58 @@
+<header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="row">
+        <div class="col d-lg-flex align-items-center">
+          <a target="_blank" class="header__logo logo mb-2 mb-lg-0" href="/">
+            <span class="visually-hidden">Перейти на главную</span>
+            <svg>
+              <use href="@@webRoot/img/sprites/sprite.svg#logo"></use>
+            </svg>
+          </a>
+
+          <div class="header__description d-lg-inline-block">
+            Информационный портал для предпринимателей
+          </div>
+        </div>
+
+        <div class="col-auto d-none d-md-block">
+          <a target="_blank" href="#login" class="header__login btn btn_link">
+            Войти
+          </a>
+
+          <a target="_blank" href="#signup" class="header__signup btn btn_outline">
+            Регистрация
+          </a>
+        </div>
+
+        <div class="col-auto d-md-none">
+
+          <button class="header__menu-btn btn btn_icon"
+            type="button"
+            data-bs-toggle="modal" 
+            data-bs-target="#headerMenu"
+          >
+            <span class="visually-hidden">Открыть меню</span>
+            <svg>
+              <use href="@@webRoot/img/sprites/sprite.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom d-none d-md-flex">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-auto">
+          @@include("../header-menu/header-menu.html")
+        </div>
+
+        <div class="col-auto ">
+          <a class="header__about btn btn_link" target="_blank" href="#">О проекте</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

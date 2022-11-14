@@ -1,0 +1,31 @@
+.socials {
+    display: flex;
+    justify-content: flex-end;
+
+    // .socials__link
+    &__link {
+        @include colorHover;
+
+        @include media-breakpoint-up(sm) {
+            width: 40px;
+            height: 40px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 32px;
+            height: 32px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-left: torem(8);
+        }
+
+        width: 45px;
+        height: 45px;
+        color: $black2;
+
+        & + .socials__link {
+            margin-left: torem(12);
+        }
+    }
+}

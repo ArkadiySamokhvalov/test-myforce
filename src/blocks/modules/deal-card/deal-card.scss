@@ -1,0 +1,70 @@
+.deal-card {
+    display: flex;
+    padding: torem(24) torem(32);
+    background: $white;
+    border-radius: $brMd;
+    color: $textMain;
+    gap: torem(12);
+    justify-content: space-between;
+
+    //   max-width: 350px;
+
+    // .deal-card__info
+    &__info {
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+            max-width: torem(130);
+        }
+
+        @include media-breakpoint-up(xl) {
+            gap: torem(44);
+        }
+
+        display: flex;
+        flex-direction: column;
+        gap: torem(30);
+        flex-grow: 1;
+    }
+
+    // .deal-card__label
+    &__label {
+        font-weight: 300;
+        font-size: torem(12);
+        line-height: torem(14);
+        margin-bottom: torem(4);
+    }
+
+    // .deal-card__text
+    &__text {
+        @include media-breakpoint-up(lg) {
+            max-width: torem(120);
+        }
+
+        font-weight: 500;
+        font-size: torem(14);
+        line-height: torem(17);
+    }
+
+    // .deal-card__link
+    &__link {
+        display: flex;
+        transition: $trDur;
+        border-radius: torem(12);
+
+        &:hover {
+            box-shadow: 0 0 2px 2px $accent;
+        }
+    }
+
+    // .deal-card__picture
+    &__picture {
+        display: block;
+        max-width: torem(120);
+        align-items: center;
+        
+        @include media-breakpoint-up(xl) {
+            max-width: torem(150);
+            align-items: flex-start;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+<div class="swiper-slide">
+  <div class="package">
+    <div class="package__span">Пакет</div>
+  
+    <div class="package__title">@@title</div>
+  
+    <div class="package__info">
+      <div class="package__included marked-list">
+        <div class="marked-list__text">Что входит?</div>
+        <ul class="marked-list__list">
+          @@for (var i = 0; i < included.length; i++) {
+            <li class="marked-list__item"><span>`+included[i]+`</span></li>
+          }
+        </ul>
+      </div>
+      <div class="package__arbitration marked-list">
+        <div class="marked-list__text">Арбитражное управление</div>
+        <ul class="marked-list__list">
+          @@for (var i = 0; i < arbitration.length; i++) {
+            <li class="marked-list__item"><span>`+arbitration[i]+`</span></li>
+          }
+        </ul>
+      </div>
+      <div class="package__team marked-list">
+        <div class="marked-list__text">Команда</div>
+        <ul class="marked-list__list">
+          @@for (var i = 0; i < team.length; i++) {
+            <li class="marked-list__item"><span>`+team[i]+`</span></li>
+          }
+        </ul>
+      </div>
+    </div>
+        
+    @@if (checks.price === true) {
+      @@for (var i = 0; i < price.length; i++) {
+        @@include("../price/price.html", `+(JSON.stringify({price: price[i], item: "банкрот"}))+`)
+      }
+    }
+
+    @@if (checks.extra === true) {
+      <ul class="package__extra">
+        @@for (var i = 0; i < extra.length; i++) {
+          <li class="package__extra-item">`+extra[i]+`</li>
+        }
+      </ul>
+    }
+
+    <span class="package__more">
+      Узнайте больше о пакете
+    </span>
+  
+    <button class="package__btn btn btn_primary btn_big" type="button" data-bs-toggle="modal" data-bs-target="#contactForm">
+      Узнать подробнее
+    </button>
+  </div>
+</div>

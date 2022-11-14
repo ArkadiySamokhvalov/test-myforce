@@ -1,0 +1,78 @@
+.about {
+    // .about__top
+    &__top {
+        @include media-breakpoint-up(lg) {
+            margin-bottom: torem(100);
+        }
+
+        margin-bottom: torem(40);
+    }
+
+    // .about__title
+    &__title {
+        @include media-breakpoint-up(lg) {
+            margin-bottom: torem(77);
+        }
+
+        margin-bottom: 1.5rem;
+    }
+
+    // .about__association
+    &__association {
+        @include media-breakpoint-up(lg) {
+            font-size: torem(22);
+            line-height: torem(27);
+        }
+
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        font-size: torem(18);
+        line-height: torem(22);
+    }
+
+    // .about__advantage
+    &__advantages {
+        --bs-gutter-y: 30px;
+        --bs-gutter-x: 30px;
+    }
+
+    // .about__picture
+    &__picture {
+        @include media-breakpoint-up(lg) {
+            order: 1;
+            width: auto;
+        }
+
+        order: 2;
+        width: 100%;
+
+        img {
+            @include media-breakpoint-up(lg) {
+                display: inline-block;
+                max-width: unset;
+                margin: 0;
+            }
+
+            display: block;
+            width: 100%;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+    }
+
+    // .about__theses
+    &__theses {
+        @include media-breakpoint-up(lg) {
+            order: 2;
+            max-width: torem(477);
+            gap: torem(44);
+        }
+
+        display: flex;
+        flex-direction: column;
+        gap: torem(30);
+        order: 1;
+        width: 100%;
+        margin-bottom: torem(30);
+    }
+}

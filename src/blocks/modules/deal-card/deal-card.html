@@ -1,0 +1,28 @@
+<div class="swiper-slide">
+  <div class="deal-card">
+    <div class="deal-card__info">
+      <div class="deal-card__group">
+        <div class="deal-card__label">Регион</div>
+        <div class="deal-card__text">@@region</div>
+      </div>
+      <div class="deal-card__group">
+        <div class="deal-card__label">Номер дела</div>
+        <div class="deal-card__text">@@number</div>
+      </div>
+      <div class="deal-card__group">
+        <div class="deal-card__label">Списано</div>
+        <div class="deal-card__text">@@writeOff</div>
+      </div>
+    </div>
+
+    <a class="deal-card__link" target="_blank" href="#doc"  title="Посмотреть дело {{item.region}}">
+      <picture class="deal-card__picture">
+        <source
+          srcset=@@webRoot/img/@@image.webp
+          type="image/webp"
+        />
+        <img src=@@webRoot/img/@@image.png alt="Дело @@region" />
+      </picture>
+    </a>
+  </div>
+</div>

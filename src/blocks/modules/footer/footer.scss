@@ -1,0 +1,109 @@
+.footer {
+    @include media-breakpoint-up(lg) {
+        padding: torem(60) 0 torem(40);
+    }
+
+    padding: torem(48) 0 torem(20);
+
+    .footer__top, .footer__middle, .footer__info {
+        border-bottom: 1px solid $gray1;
+    }
+
+    // .footer__top
+    &__top {
+        @include media-breakpoint-up(lg) {
+            padding-bottom: torem(40);
+        }
+
+        padding-bottom: torem(20);
+        gap: torem(30) 0;
+    }
+
+    // .footer__logo
+    &__logo {
+        margin-bottom: torem(12);
+        width: 218px;
+        height: 32px;
+        color: $black;
+    }
+
+    // .footer__socials
+    &__socials {
+        @include media-breakpoint-up(sm) {
+            margin-bottom: 0;
+        }
+
+        margin-bottom: torem(20);
+        flex-grow: 1;
+    }
+
+    // .footer__payment
+    &__payment {
+
+    }
+
+    // .footer__middle
+    &__middle {
+        @include media-breakpoint-up(lg) {
+            padding: torem(40) 0 torem(60);
+        }
+
+        padding-top: torem(20);
+        padding-bottom: torem(20);
+
+        .footer__subtitle {
+            margin-bottom: torem(28);
+        }
+    }
+
+    // .footer__info
+    &__info {
+        @include media-breakpoint-up(lg) {
+            gap: unset;
+            padding: torem(40) 0;
+        }
+
+        padding: torem(20) 0 torem(20);
+        gap: torem(25) 0;
+    }
+
+    // .footer__subtitle
+    &__subtitle {
+        font-size: torem(20);
+        line-height: 145%;
+        color: $black2;
+
+        &_small {
+            font-size: torem(18);
+        }
+    }
+
+    // .footer__btn
+    &__btn {
+        display: inline-flex;
+        align-items: center;
+        margin-top: torem(28);
+
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-left: torem(10);
+        }
+    }
+
+    //.footer__products
+    &__products {
+        @include media-breakpoint-up(md) {
+            gap: torem(30) 0;
+        }
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: torem(25) 0;
+    }
+
+    // .footer__menu
+    &__menu {
+        padding-top: torem(20);
+    }
+}

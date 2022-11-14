@@ -1,0 +1,30 @@
+.info {
+    @include media-breakpoint-up(md) {
+        min-width: unset;
+    }
+
+    min-width: 235px;
+
+    // .info__title
+    &__title {
+        @include media-breakpoint-up(lg) {
+            margin-bottom: torem(12);
+        }
+
+        color: $textUnActive;
+        font-size: torem(14);
+        line-height: torem(17);
+        margin-bottom: torem(8);
+    }
+
+    // .info__text
+    &__text {
+        color: $textMainUnActive;
+        font-size: torem(14);
+        line-height: 145%;
+
+        & + .info__text {
+            margin-top: torem(8);
+        }
+    }
+}

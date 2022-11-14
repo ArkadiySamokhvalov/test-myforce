@@ -1,0 +1,21 @@
+.services {
+    @include media-breakpoint-up(lg) {
+        padding-bottom: torem(100);
+    }
+
+    padding-bottom: torem(48);
+
+    .marked-list__item:nth-child(5) {
+        font-weight: 700;
+    }
+
+    .package__title {
+        height: torem(50);
+        text-align: left;
+    }
+
+    // .services__list
+    &__list {
+        --bs-gutter-y: 30px;
+    }
+}

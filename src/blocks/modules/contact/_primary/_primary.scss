@@ -1,0 +1,17 @@
+.contact_primary {
+    @include media-breakpoint-up(lg) {
+        font-size: torem(24);
+    }
+
+    font-weight: 500;
+    font-size: torem(22);
+    line-height: 145%;
+
+    & + .contact_secondary {
+        @include media-breakpoint-up(lg) {
+            margin-top: torem(8);
+        }
+
+        margin-top: torem(4);
+    }
+}

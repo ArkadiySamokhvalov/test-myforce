@@ -1,0 +1,10 @@
+.contact_secondary {
+    @include media-breakpoint-up(lg) {
+        margin-top: torem(8);
+        font-size: torem(20);
+    }
+
+    font-size: torem(18);
+    line-height: 145%;
+    color: $black2;
+}

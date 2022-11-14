@@ -1,0 +1,29 @@
+.section {
+    @include media-breakpoint-up(lg) {
+        padding-top: torem(100);
+    }
+
+    color: $textMain;
+    padding-top: torem(48);
+
+    // .section__title + .section__subtitle
+    &__title + &__subtitle {
+        @include media-breakpoint-up(lg) {
+            margin-top: torem(20);
+        }
+
+        margin-top: torem(16);
+    }
+
+    // .section__subtitle
+    &__subtitle {
+        @include media-breakpoint-up(lg) {
+            font-size: torem(30);
+            line-height: 130%;
+            margin-bottom: torem(60);
+        }
+
+        font-size: torem(22);
+        margin-bottom: torem(30);
+    }
+}

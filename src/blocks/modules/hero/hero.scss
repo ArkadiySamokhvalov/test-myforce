@@ -1,0 +1,57 @@
+.hero {
+    @include media-breakpoint-up(md) {
+        background-image: none;
+    }
+
+    background-color: #5c687e;
+    color: $white;
+    background-image: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%));
+
+    // .hero__img
+    &__img {
+        @include media-breakpoint-up(sm) {
+            background-size: contain;
+            background-position: calc(100% + torem(100)) 0;
+        }
+
+        @include media-breakpoint-up(lg) {
+            max-width: 1440px;
+            padding: torem(132) 0 torem(214);
+            background-position: 100% 0;
+            background-size: contain;
+        }
+
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: torem(56) 0;
+        background-image: url("../img/hero.png");
+        background-position: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    // .hero__title
+    &__title {
+        @include media-breakpoint-up(lg) {
+            max-width: torem(678);
+        }
+
+        color: currentcolor;
+        margin-bottom: torem(12);
+        max-width: torem(490);
+    }
+
+    // .hero__text
+    &__text {
+        @include media-breakpoint-up(lg) {
+            font-size: torem(18);
+            margin-bottom: torem(44);
+        }
+
+        line-height: 145%;
+        color: #f4f7fe;
+        margin-bottom: torem(30);
+        max-width: torem(445);
+    }
+}

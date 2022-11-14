@@ -1,0 +1,16 @@
+<section class="packages section">
+  <div class="container">
+    <h2 class="section__title packages__title">Пакеты</h2>
+    
+    <div class="swiper" id="packages">
+      <div class="swiper-wrapper packages__list row row-cols-auto row-cols-md-2 row-cols-xl-3">
+        @@loop("./packages__item.html", "data/packages.json")
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    
+    <div class="packages__info">
+      * В случае не передачи количества оплаченных анкет в текущем месяце , анкеты могут передаваться в последующих, по договорённости с исполнителем.
+    </div>
+  </div>     
+</section>

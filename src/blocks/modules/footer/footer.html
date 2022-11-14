@@ -1,0 +1,45 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top row">
+      <div class="col col-lg-8">
+        <div class="footer__title">
+          @@include("../logo/logo.html", { "class": "footer__logo" })
+
+          <div class="footer__subtitle">
+            — сервис для людей, которые хотят большего
+          </div>
+        </div>
+
+        <a class="footer__btn btn btn_primary btn_big"
+          target="_blank"
+          href="#signup"
+          type="button"
+        >
+          Регистрация
+          <svg>
+            <use href="@@webRoot/img/sprites/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="col col-lg-4 d-flex flex-column">
+        @@include("../socials/socials.html", { class: "footer__socials" })
+
+        @@include("../payments/payments.html", { class: "footer__payments" })
+      </div>
+    </div>
+
+    <div class="footer__middle">
+      <div class="footer__subtitle footer__subtitle_small">
+        Все, что нужно для вашего бизнеса
+      </div>
+      @@include("../product/product.html", { "class": "footer__products" })
+    </div>
+
+    <div class="footer__bottom">
+      @@include("../info/info.html", { "class": "footer__info" })
+
+      @@include("../footer-menu/footer-menu.html", { "class": "footer__menu" })
+    </div>
+  </div>
+</footer>

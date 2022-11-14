@@ -1,0 +1,35 @@
+<div class="swiper-slide">
+  <div class="package">
+    <div class="package__title">@@title</div>
+
+    <div class="package__info">
+      <div class="package__received marked-list">
+        <div class="marked-list__text">Команда</div>
+        <ul class="marked-list__list">
+          @@for (var i = 0; i < received.length; i++) {
+            <li class="marked-list__item"><span>`+received[i]+`</span></li>
+          }
+        </ul>
+      </div>
+    </div>
+
+    
+    @@if (checks.footnote === true) {
+      <span class="package__footnote">@@footnote</span>
+    }
+    
+    @@if (checks.price === true) {
+      @@for (var i = 0; i < price.length; i++) {
+        @@include("../price/price.html", `+(JSON.stringify({price: price[i], item: "дело"}))+`)
+      }
+    }
+    
+    <div class="package__more">
+      Узнайте больше об услуге
+    </div>
+
+    <button class="package__btn btn btn_primary btn_big" type="button" data-bs-toggle="modal" data-bs-target="#contactForm">
+      Узнать подробнее
+    </button>
+  </div>
+</div>

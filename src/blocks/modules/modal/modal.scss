@@ -1,0 +1,89 @@
+.modal {
+  color: $textMain;
+
+  // .modal-title
+  &-title {
+    margin: 0 auto;
+    font-size: torem(22);
+  }
+
+  // .modal-content
+  &-content {
+    @include cardBackground;
+  }
+
+  // .modal-preloader
+  &-preloader {
+    content: '';
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $brSm;
+    transition: opacity $trDur;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+  }
+
+  // .modal-close
+  &-close {
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  // .modal-header, .modal-footer, .modal-body
+  &-header,
+  &-footer,
+  &-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  // .modal-header, .modal-footer
+  &-header,
+  &-footer {
+    border: none;
+  }
+
+  // .modal-header
+  &-header {
+    position: relative;
+  }
+}
+
+#headerMenu {
+  .modal-dialog {
+    height: 100%;
+    margin: 0 0 0 auto;
+  }
+
+  .modal-content {
+    display: block;
+    max-width: 360px;
+    height: 100%;
+    margin: 0 0 0 auto;
+    border-radius: 12px 0 0 12px;
+  }
+
+  .header-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn_primary {
+    border-radius: $brSm;
+  }
+}

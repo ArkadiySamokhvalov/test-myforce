@@ -1,0 +1,25 @@
+.footer-menu {
+    @include media-breakpoint-up(lg) {
+        gap: torem(16);
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    color: $black3;
+    gap: torem(10);
+
+    // .footer-menu__item
+    &__item {
+        line-height: 145%;
+        font-size: torem(14);
+    }
+
+    // .footer-menu__link
+    &__link {
+        transition: $trDur;
+
+        &:hover {
+            text-decoration-line: underline;
+        }
+    }
+}

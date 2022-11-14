@@ -1,0 +1,54 @@
+.swiper {
+    @include media-breakpoint-up(lg) {
+        padding: 12px;
+        margin-bottom: -12px;
+    }
+
+    padding-bottom: 32px;
+}
+
+.swiper-pagination {
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+
+    bottom: 0 !important;
+}
+
+#packages, #services {
+    .swiper-pagination-bullet {
+        background-color: $black3;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $blue;
+    }
+
+    .swiper-wrapper {
+        @include media-breakpoint-up(lg) {
+            flex-wrap: wrap;
+        }
+
+        flex-wrap: nowrap;
+        width: auto;
+    }
+
+    .swiper-slide {
+        @include media-breakpoint-up(lg) {
+            max-width: unset;
+        }
+
+        max-width: 400px;
+        height: auto;
+    }
+}
+
+#deals {
+    .swiper-pagination-bullet {
+        background-color: $gray1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $white;
+    }
+}

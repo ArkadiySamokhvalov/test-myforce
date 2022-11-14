@@ -1,0 +1,13 @@
+.contact {
+    color: $black;
+    display: block;
+    transition: $trDur;
+
+    &:hover {
+        color: $accent;
+    }
+}
+
+@import "_primary/primary";
+@import "_secondary/secondary";
+@import "_mail/mail";

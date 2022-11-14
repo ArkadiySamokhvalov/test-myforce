@@ -1,0 +1,78 @@
+.btn {
+    display: inline-block;
+    padding: torem(8) torem(20);
+    border-radius: $brSm;
+    cursor: pointer;
+    transition: $trDur;
+
+    // .btn_icon {
+    &_icon {
+        @include colorHover;
+
+        width: torem(25);
+        height: torem(25);
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: currentcolor;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // .btn_link
+    &_link {
+        border: none;
+        background-color: transparent;
+        color: currentcolor;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:focus {
+            color: darken($color: $accent, $amount: 20);
+        }
+    }
+
+    // .btn_outline
+    &_outline {
+        border: 1px solid currentcolor;
+        color: currentcolor;
+        background-color: transparent;
+
+        &:hover {
+            color: $accent;
+            border-color: $accent;
+        }
+
+        &:focus {
+            box-shadow: inset 0 -1px 0 1px darken($color: $accent, $amount: 20);
+        }
+    }
+
+    // .btn_primary
+    &_primary {
+        background-color: $accent;
+        box-shadow: 6px 6px 14px rgb(46 46 46 / 8%);
+        border: none;
+        color: $white;
+        border-radius: $brLg;
+        font-weight: 500;
+
+        &:hover {
+            background-color: darken($color: $accent, $amount: 10);
+        }
+
+        &:focus {
+            box-shadow: inset 0 -1px 0 1px darken($color: $accent, $amount: 20);
+        }
+    }
+
+    // .btn_big
+    &_big {
+        padding: torem(12.5) torem(24);
+    }
+}

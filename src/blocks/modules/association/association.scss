@@ -1,0 +1,11 @@
+.association {
+    // .association__title
+    &__title {
+        font-weight: 500;
+    }
+
+    // .association__description
+    &__description {
+        margin-left: 0;
+    }
+}

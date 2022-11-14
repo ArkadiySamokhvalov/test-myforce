@@ -1,0 +1,29 @@
+@mixin cardBackground {
+  background: $white;
+  border: 1px solid $gray1;
+  box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.07);
+  border-radius: $brSm;
+  padding: 1rem torem(12);
+
+  @include media-breakpoint-up(lg) {
+    padding: torem(28) torem(24);
+  }
+}
+
+@mixin wideSpaceText {
+  font-size: torem(14);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@mixin colorHover {
+  transition: $trDur;
+
+  &:hover {
+    color: $accent;
+  }
+
+  &:focus {
+    color: darken($color: $accent, $amount: 20);
+  }
+}

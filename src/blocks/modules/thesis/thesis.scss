@@ -1,0 +1,16 @@
+.thesis {
+    // .tesis__title
+    &__title {
+        margin-bottom: torem(12);
+        font-size: torem(25);
+        line-height: torem(30);
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    // .tesis__text
+    &__text {
+        font-size: torem(18);
+        line-height: torem(22);
+    }
+}

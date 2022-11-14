@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="keywords" content="Ключевые слова">
+        <meta name="description" content="Описание">
+        <title>MYFORCE</title>
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <body>
+        <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="row">
+        <div class="col d-lg-flex align-items-center">
+          <a target="_blank" class="header__logo logo mb-2 mb-lg-0" href="/">
+            <span class="visually-hidden">Перейти на главную</span>
+            <svg>
+              <use href="./img/sprites/sprite.svg#logo"></use>
+            </svg>
+          </a>
+
+          <div class="header__description d-lg-inline-block">
+            Информационный портал для предпринимателей
+          </div>
+        </div>
+
+        <div class="col-auto d-none d-md-block">
+          <a target="_blank" href="#login" class="header__login btn btn_link">
+            Войти
+          </a>
+
+          <a target="_blank" href="#signup" class="header__signup btn btn_outline">
+            Регистрация
+          </a>
+        </div>
+
+        <div class="col-auto d-md-none">
+
+          <button class="header__menu-btn btn btn_icon"
+            type="button"
+            data-bs-toggle="modal" 
+            data-bs-target="#headerMenu"
+          >
+            <span class="visually-hidden">Открыть меню</span>
+            <svg>
+              <use href="./img/sprites/sprite.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom d-none d-md-flex">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-auto">
+          <ul class="header-menu row row-cols-auto">
+  <li class="header-menu__item">
+  <a target="_blank" class="header-menu__link" href="#">
+    <svg>
+      <use href="./img/sprites/sprite.svg#bag"></use>
+    </svg>
+    <span>Франшиза</span>
+  </a>
+</li><li class="header-menu__item">
+  <a target="_blank" class="header-menu__link" href="#">
+    <svg>
+      <use href="./img/sprites/sprite.svg#document"></use>
+    </svg>
+    <span>Лидогенерация</span>
+  </a>
+</li><li class="header-menu__item">
+  <a target="_blank" class="header-menu__link" href="#">
+    <svg>
+      <use href="./img/sprites/sprite.svg#check"></use>
+    </svg>
+    <span>Обучение</span>
+  </a>
+</li><li class="header-menu__item">
+  <a target="_blank" class="header-menu__link" href="#">
+    <svg>
+      <use href="./img/sprites/sprite.svg#check"></use>
+    </svg>
+    <span>Арбитраж</span>
+  </a>
+</li><li class="header-menu__item">
+  <a target="_blank" class="header-menu__link" href="#">
+    <svg>
+      <use href="./img/sprites/sprite.svg#card"></use>
+    </svg>
+    <span>Клуб MYFORCE</span>
+  </a>
+</li>
+</ul>
+        </div>
+
+        <div class="col-auto ">
+          <a class="header__about btn btn_link" target="_blank" href="#">О проекте</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+        <main class="">
+            <section class="hero">
+  <div class="hero__img">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="hero__title">
+            Арбитражное управление при банкротстве физических и юридических лиц
+          </h1>
+          <div class="hero__text">
+            Более 60 арбитражных управляющих в системе! Являемся членами
+            совета СРО!
+          </div>
+          <button class="package__btn btn btn_primary btn_big" type="button" data-bs-toggle="modal" data-bs-target="#contactForm">
+            Узнать подробнее
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+            <section class="about section">
+  <div class="container">
+    <div class="about__top row">
+      <div class="col-lg-5">
+        <h2 class="section__title about__title">О нас</h2>
+        <dl class="about__association association">
+  <dt class="association__title">
+    Партнерская программа MYFORCE&nbsp;—
+  </dt>
+  <dd class="association__description">
+    делегируйте арбитражное управление своих банкротов профессионалам с гарантией на снятие прожиточных минимумов в срок
+  </dd>
+</dl>
+      </div>
+      <div class="col-lg-6">
+        <div class="about__advantages row row-cols-sm-2">
+          <div class="advantage">
+  <div class="advantage__content">
+    <picture class="advantage__picture">
+      <source
+        srcset=./img/consultation.webp
+        type="image/webp"
+      />
+      <img src=./img/consultation.png alt="" />
+    </picture>
+    <div class="advantage__desctiption">Бесплатные консультации и аудит сложных банкротов</div>
+  </div>
+</div><div class="advantage">
+  <div class="advantage__content">
+    <picture class="advantage__picture">
+      <source
+        srcset=./img/arbitration.webp
+        type="image/webp"
+      />
+      <img src=./img/arbitration.png alt="" />
+    </picture>
+    <div class="advantage__desctiption">Гарантия на арбитражное управление — 100% банкротим до конца</div>
+  </div>
+</div><div class="advantage">
+  <div class="advantage__content">
+    <picture class="advantage__picture">
+      <source
+        srcset=./img/guarantee.webp
+        type="image/webp"
+      />
+      <img src=./img/guarantee.png alt="" />
+    </picture>
+    <div class="advantage__desctiption">Гарантия на цену — никогда не увеличиваем стоимость услуг</div>
+  </div>
+</div><div class="advantage">
+  <div class="advantage__content">
+    <picture class="advantage__picture">
+      <source
+        srcset=./img/mortarboard.webp
+        type="image/webp"
+      />
+      <img src=./img/mortarboard.png alt="" />
+    </picture>
+    <div class="advantage__desctiption">База знаний из более чем 100 материалов по банкротству и списанию долгов</div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__bottom row">
+      <div class="col-lg-6 about__picture">
+        <picture>
+          <img src="./img//picture.svg" alt="" />
+        </picture>
+      </div>
+      <div class="col about__theses">
+        <div class="thesis">
+  <div class="thesis__title">6 лет успешной работы</div>
+  <div class="thesis__text">Каждый день мы помогаем нашим партнерам заключать больше договоров по банкротству.</div>
+</div><div class="thesis">
+  <div class="thesis__title">95 партнеров по всей стране</div>
+  <div class="thesis__text">Мы хотим, чтобы наши партнеры были лидерами в нише банкротства в своем регионе. Для этого мы обучаем партнеров технологиям эффективных продаж, продвижения, маркетинга, оптимизации бизнес-процессов и т. д.</div>
+</div><div class="thesis">
+  <div class="thesis__title">Более 9 000 успешных дел по банкротству</div>
+  <div class="thesis__text">Мы работаем как с простыми проектами, так и многосложными сценариями проведения процедуры. Наша команда освободила от долгов более 9000 граждан по всей стране.</div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+            <section class="packages section">
+  <div class="container">
+    <h2 class="section__title packages__title">Пакеты</h2>
+    
+    <div class="swiper" id="packages">
+      <div class="swiper-wrapper packages__list row row-cols-auto row-cols-md-2 row-cols-xl-3">
+        <div class="swiper-slide">
+  <div class="package">
+    <div class="package__span">Пакет</div>
+  
+    <div class="package__title">Стандартный пакет</div>
+  
+    <div class="package__info">
+      <div class="package__included marked-list">
+        <div class="marked-list__text">Что входит?</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>1 анкета банкрота для бесплатного анализа проблемы</span></li>
+          
+            <li class="marked-list__item"><span>Консультация в рамках анкеты банкрота</span></li>
+          
+            <li class="marked-list__item"><span>Процедура банкротства физ.лица с гарантиями на работу</span></li>
+          
+        </ul>
+      </div>
+      <div class="package__arbitration marked-list">
+        <div class="marked-list__text">Арбитражное управление</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>10 000 р. – оплата команды АУ</span></li>
+          
+            <li class="marked-list__item"><span>15 000 р. – оплата публикации</span></li>
+          
+            <li class="marked-list__item"><span>25 000 р. – оплата депозита</span></li>
+          
+        </ul>
+      </div>
+      <div class="package__team marked-list">
+        <div class="marked-list__text">Команда</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>Персональный АУ – 1 чел</span></li>
+          
+            <li class="marked-list__item"><span>Эксперт по рискам – 1 чел.</span></li>
+          
+            <li class="marked-list__item"><span>ПАУ – 1 чел.</span></li>
+          
+            <li class="marked-list__item"><span>Специалист фин.отдела – 1 чел.</span></li>
+          
+        </ul>
+      </div>
+    </div>
+        
+    
+      
+        <div class="package__price price">
+  <span class="price__value">
+    10000
+  </span>
+  <span class="price__currency">&nbsp;₽&nbsp;</span>
+  <span class="price__per">банкрот</span>
+</div>
+      
+    
+
+    
+
+    <span class="package__more">
+      Узнайте больше о пакете
+    </span>
+  
+    <button class="package__btn btn btn_primary btn_big" type="button" data-bs-toggle="modal" data-bs-target="#contactForm">
+      Узнать подробнее
+    </button>
+  </div>
+</div><div class="swiper-slide">
+  <div class="package">
+    <div class="package__span">Пакет</div>
+  
+    <div class="package__title">Средний арбитраж</div>
+  
+    <div class="package__info">
+      <div class="package__included marked-list">
+        <div class="marked-list__text">Что входит?</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>До 30 анкет клиентов в месяц</span></li>
+          
+            <li class="marked-list__item"><span>Поиск по базе данных завершенных дел</span></li>
+          
+            <li class="marked-list__item"><span>Рабочие алгоритмы решения вопросов</span></li>
+          
+            <li class="marked-list__item"><span>Консультация в рамках анкет банкротов</span></li>
+          
+            <li class="marked-list__item"><span>Проведение процедур с гарантиями на работу</span></li>
+          
+        </ul>
+      </div>
+      <div class="package__arbitration marked-list">
+        <div class="marked-list__text">Арбитражное управление</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>В зависимости от объема дел – оплата команды АУ</span></li>
+          
+            <li class="marked-list__item"><span>15 000 р. – оплата публикации</span></li>
+          
+            <li class="marked-list__item"><span>25 000 р. – оплата депозита</span></li>
+          
+        </ul>
+      </div>
+      <div class="package__team marked-list">
+        <div class="marked-list__text">Команда</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>Персональный АУ – 2 чел</span></li>
+          
+            <li class="marked-list__item"><span>Эксперт по рискам – 1 чел.</span></li>
+          
+            <li class="marked-list__item"><span>ПАУ – 4 чел.</span></li>
+          
+            <li class="marked-list__item"><span>Специалист фин.отдела – 3 чел.</span></li>
+          
+        </ul>
+      </div>
+    </div>
+        
+    
+
+    
+      <ul class="package__extra">
+        
+          <li class="package__extra-item">От 10 дел в месяц, при единовременной оплате 80 000₽</li>
+        
+          <li class="package__extra-item">От 30 дел в месяц, при единовременной оплате 185 000₽</li>
+        
+      </ul>
+    
+
+    <span class="package__more">
+      Узнайте больше о пакете
+    </span>
+  
+    <button class="package__btn btn btn_primary btn_big" type="button" data-bs-toggle="modal" data-bs-target="#contactForm">
+      Узнать подробнее
+    </button>
+  </div>
+</div><div class="swiper-slide">
+  <div class="package">
+    <div class="package__span">Пакет</div>
+  
+    <div class="package__title">Крупный арбитраж</div>
+  
+    <div class="package__info">
+      <div class="package__included marked-list">
+        <div class="marked-list__text">Что входит?</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>Анкеты в месяц без ограничений</span></li>
+          
+            <li class="marked-list__item"><span>Консультации в рамках анкет банкротов</span></li>
+          
+            <li class="marked-list__item"><span>Поиск по базе данных замершенных дел</span></li>
+          
+            <li class="marked-list__item"><span>Рабочие алгоритмы решения вопросов</span></li>
+          
+            <li class="marked-list__item"><span>Делегирование общения с клиентами на АУ</span></li>
+          
+            <li class="marked-list__item"><span>Проведение процедур с гарантиями на работу</span></li>
+          
+        </ul>
+      </div>
+      <div class="package__arbitration marked-list">
+        <div class="marked-list__text">Арбитражное управление</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>4 800 р. – оплата команды АУ</span></li>
+          
+            <li class="marked-list__item"><span>15 000 р. – оплата публикации</span></li>
+          
+            <li class="marked-list__item"><span>25 000 р. – оплата депозита</span></li>
+          
+        </ul>
+      </div>
+      <div class="package__team marked-list">
+        <div class="marked-list__text">Команда</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>Персональный АУ – 5 чел</span></li>
+          
+            <li class="marked-list__item"><span>Эксперт по рискам – 4 чел.</span></li>
+          
+            <li class="marked-list__item"><span>ПАУ – 7 чел.</span></li>
+          
+            <li class="marked-list__item"><span>Специалист фин.отдела – 5 чел.</span></li>
+          
+        </ul>
+      </div>
+    </div>
+        
+    
+      
+        <div class="package__price price">
+  <span class="price__value">
+    4800
+  </span>
+  <span class="price__currency">&nbsp;₽&nbsp;</span>
+  <span class="price__per">банкрот</span>
+</div>
+      
+    
+
+    
+      <ul class="package__extra">
+        
+          <li class="package__extra-item">От 50 дел в месяц, при единовременной оплате 240 000₽</li>
+        
+      </ul>
+    
+
+    <span class="package__more">
+      Узнайте больше о пакете
+    </span>
+  
+    <button class="package__btn btn btn_primary btn_big" type="button" data-bs-toggle="modal" data-bs-target="#contactForm">
+      Узнать подробнее
+    </button>
+  </div>
+</div><div class="swiper-slide">
+  <div class="package">
+    <div class="package__span">Пакет</div>
+  
+    <div class="package__title">ПРОБНЫЙ ТАРИФ</div>
+  
+    <div class="package__info">
+      <div class="package__included marked-list">
+        <div class="marked-list__text">Что входит?</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>1 анкета банкрота для бесплатного анализа проблемы</span></li>
+          
+            <li class="marked-list__item"><span>Консультация в рамках анкеты банкрота</span></li>
+          
+            <li class="marked-list__item"><span>Процедура банкротства физ.лица с гарантиями на работу</span></li>
+          
+        </ul>
+      </div>
+      <div class="package__arbitration marked-list">
+        <div class="marked-list__text">Арбитражное управление</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>0 р. – оплата команды АУ</span></li>
+          
+            <li class="marked-list__item"><span>16 000 р. – оплата публикации</span></li>
+          
+            <li class="marked-list__item"><span>25 000 р. – оплата депозита</span></li>
+          
+        </ul>
+      </div>
+      <div class="package__team marked-list">
+        <div class="marked-list__text">Команда</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>Персональный АУ – 1 чел</span></li>
+          
+            <li class="marked-list__item"><span>Эксперт по рискам – 1 чел.</span></li>
+          
+            <li class="marked-list__item"><span>ПАУ – 1 чел.</span></li>
+          
+            <li class="marked-list__item"><span>Специалист фин.отдела – 1 чел.</span></li>
+          
+        </ul>
+      </div>
+    </div>
+        
+    
+      
+        <div class="package__price price">
+  <span class="price__value">
+    0
+  </span>
+  <span class="price__currency">&nbsp;₽&nbsp;</span>
+  <span class="price__per">банкрот</span>
+</div>
+      
+    
+
+    
+
+    <span class="package__more">
+      Узнайте больше о пакете
+    </span>
+  
+    <button class="package__btn btn btn_primary btn_big" type="button" data-bs-toggle="modal" data-bs-target="#contactForm">
+      Узнать подробнее
+    </button>
+  </div>
+</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    
+    <div class="packages__info">
+      * В случае не передачи количества оплаченных анкет в текущем месяце , анкеты могут передаваться в последующих, по договорённости с исполнителем.
+    </div>
+  </div>     
+</section>
+            <section class="section services">
+  <div class="container">
+    <h2 class="section__title">Услуги арбитражных управляющих</h2>
+    <div class="section__subtitle">Вы можете выбрать отдельную услугу</div>
+
+    <div class="swiper" id="services">
+      <div class="swiper-wrapper services__list row row-cols-auto row-cols-md-2 row-cols-xl-3">
+        <div class="swiper-slide">
+  <div class="package">
+    <div class="package__title">Анализ банкрота</div>
+
+    <div class="package__info">
+      <div class="package__received marked-list">
+        <div class="marked-list__text">Команда</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>Развернутое заключение эксперта</span></li>
+          
+            <li class="marked-list__item"><span>Стратегия работы</span></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    
+    
+    
+    
+      
+        <div class="package__price price">
+  <span class="price__value">
+    1900
+  </span>
+  <span class="price__currency">&nbsp;₽&nbsp;</span>
+  <span class="price__per">дело</span>
+</div>
+      
+    
+    
+    <div class="package__more">
+      Узнайте больше об услуге
+    </div>
+
+    <button class="package__btn btn btn_primary btn_big" type="button" data-bs-toggle="modal" data-bs-target="#contactForm">
+      Узнать подробнее
+    </button>
+  </div>
+</div>
+<div class="swiper-slide">
+  <div class="package">
+    <div class="package__title">Сбор и подача документов</div>
+
+    <div class="package__info">
+      <div class="package__received marked-list">
+        <div class="marked-list__text">Команда</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>Полный комплект документов</span></li>
+          
+            <li class="marked-list__item"><span>Правильное обоснование и иск</span></li>
+          
+            <li class="marked-list__item"><span>Подача в суд через ЭЦП</span></li>
+          
+            <li class="marked-list__item"><span>Гарантии на качество</span></li>
+          
+            <li class="marked-list__item"><span>Заключение и стратегия в ПОДАРОК</span></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    
+    
+    
+    
+      
+        <div class="package__price price">
+  <span class="price__value">
+    10000
+  </span>
+  <span class="price__currency">&nbsp;₽&nbsp;</span>
+  <span class="price__per">дело</span>
+</div>
+      
+    
+    
+    <div class="package__more">
+      Узнайте больше об услуге
+    </div>
+
+    <button class="package__btn btn btn_primary btn_big" type="button" data-bs-toggle="modal" data-bs-target="#contactForm">
+      Узнать подробнее
+    </button>
+  </div>
+</div>
+<div class="swiper-slide">
+  <div class="package">
+    <div class="package__title">Составление итоговых документов</div>
+
+    <div class="package__info">
+      <div class="package__received marked-list">
+        <div class="marked-list__text">Команда</div>
+        <ul class="marked-list__list">
+          
+            <li class="marked-list__item"><span>Заявление о признании банкротом</span></li>
+          
+            <li class="marked-list__item"><span>Опись кредиторов</span></li>
+          
+            <li class="marked-list__item"><span>Опись имущества</span></li>
+          
+            <li class="marked-list__item"><span>Объяснение о причинах признания несостоятельным</span></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    
+    
+      <span class="package__footnote">*при условии наличия готового пакета документов в соответсвии со статьей 213.4 п.3 ФЗ #127 «О несостоятельности (банкротстве)»</span>
+    
+    
+    
+      
+        <div class="package__price price">
+  <span class="price__value">
+    7500
+  </span>
+  <span class="price__currency">&nbsp;₽&nbsp;</span>
+  <span class="price__per">дело</span>
+</div>
+      
+    
+    
+    <div class="package__more">
+      Узнайте больше об услуге
+    </div>
+
+    <button class="package__btn btn btn_primary btn_big" type="button" data-bs-toggle="modal" data-bs-target="#contactForm">
+      Узнать подробнее
+    </button>
+  </div>
+</div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section> 
+            <section class="section deals">
+  <div class="container">
+    <h2 class="section__title">Успешные дела</h2>
+    <div class="section__subtitle">Гарантируем 100% результат</div>
+
+    <div class="swiper" id="deals">
+      <div class="swiper-wrapper deals__cards row row-cols-sm-2 row-cols-lg-3 g-4">
+          <div class="swiper-slide">
+  <div class="deal-card">
+    <div class="deal-card__info">
+      <div class="deal-card__group">
+        <div class="deal-card__label">Регион</div>
+        <div class="deal-card__text">Ростовская область</div>
+      </div>
+      <div class="deal-card__group">
+        <div class="deal-card__label">Номер дела</div>
+        <div class="deal-card__text">А53-44457</div>
+      </div>
+      <div class="deal-card__group">
+        <div class="deal-card__label">Списано</div>
+        <div class="deal-card__text">2 197 602 р</div>
+      </div>
+    </div>
+
+    <a class="deal-card__link" target="_blank" href="#doc"  title="Посмотреть дело {{item.region}}">
+      <picture class="deal-card__picture">
+        <source
+          srcset=./img/deal.webp
+          type="image/webp"
+        />
+        <img src=./img/deal.png alt="Дело Ростовская область" />
+      </picture>
+    </a>
+  </div>
+</div><div class="swiper-slide">
+  <div class="deal-card">
+    <div class="deal-card__info">
+      <div class="deal-card__group">
+        <div class="deal-card__label">Регион</div>
+        <div class="deal-card__text">Иркутская область</div>
+      </div>
+      <div class="deal-card__group">
+        <div class="deal-card__label">Номер дела</div>
+        <div class="deal-card__text">А53-44457</div>
+      </div>
+      <div class="deal-card__group">
+        <div class="deal-card__label">Списано</div>
+        <div class="deal-card__text">394 776 р</div>
+      </div>
+    </div>
+
+    <a class="deal-card__link" target="_blank" href="#doc"  title="Посмотреть дело {{item.region}}">
+      <picture class="deal-card__picture">
+        <source
+          srcset=./img/deal.webp
+          type="image/webp"
+        />
+        <img src=./img/deal.png alt="Дело Иркутская область" />
+      </picture>
+    </a>
+  </div>
+</div><div class="swiper-slide">
+  <div class="deal-card">
+    <div class="deal-card__info">
+      <div class="deal-card__group">
+        <div class="deal-card__label">Регион</div>
+        <div class="deal-card__text">Красноярский край </div>
+      </div>
+      <div class="deal-card__group">
+        <div class="deal-card__label">Номер дела</div>
+        <div class="deal-card__text">А53-44457</div>
+      </div>
+      <div class="deal-card__group">
+        <div class="deal-card__label">Списано</div>
+        <div class="deal-card__text">366 616 р</div>
+      </div>
+    </div>
+
+    <a class="deal-card__link" target="_blank" href="#doc"  title="Посмотреть дело {{item.region}}">
+      <picture class="deal-card__picture">
+        <source
+          srcset=./img/deal.webp
+          type="image/webp"
+        />
+        <img src=./img/deal.png alt="Дело Красноярский край " />
+      </picture>
+    </a>
+  </div>
+</div><div class="swiper-slide">
+  <div class="deal-card">
+    <div class="deal-card__info">
+      <div class="deal-card__group">
+        <div class="deal-card__label">Регион</div>
+        <div class="deal-card__text">Новосибирская область</div>
+      </div>
+      <div class="deal-card__group">
+        <div class="deal-card__label">Номер дела</div>
+        <div class="deal-card__text">А53-44457</div>
+      </div>
+      <div class="deal-card__group">
+        <div class="deal-card__label">Списано</div>
+        <div class="deal-card__text">1 796 823 р</div>
+      </div>
+    </div>
+
+    <a class="deal-card__link" target="_blank" href="#doc"  title="Посмотреть дело {{item.region}}">
+      <picture class="deal-card__picture">
+        <source
+          srcset=./img/deal.webp
+          type="image/webp"
+        />
+        <img src=./img/deal.png alt="Дело Новосибирская область" />
+      </picture>
+    </a>
+  </div>
+</div><div class="swiper-slide">
+  <div class="deal-card">
+    <div class="deal-card__info">
+      <div class="deal-card__group">
+        <div class="deal-card__label">Регион</div>
+        <div class="deal-card__text">Иркутская область</div>
+      </div>
+      <div class="deal-card__group">
+        <div class="deal-card__label">Номер дела</div>
+        <div class="deal-card__text">А53-44457</div>
+      </div>
+      <div class="deal-card__group">
+        <div class="deal-card__label">Списано</div>
+        <div class="deal-card__text">1 493 681 р</div>
+      </div>
+    </div>
+
+    <a class="deal-card__link" target="_blank" href="#doc"  title="Посмотреть дело {{item.region}}">
+      <picture class="deal-card__picture">
+        <source
+          srcset=./img/deal.webp
+          type="image/webp"
+        />
+        <img src=./img/deal.png alt="Дело Иркутская область" />
+      </picture>
+    </a>
+  </div>
+</div><div class="swiper-slide">
+  <div class="deal-card">
+    <div class="deal-card__info">
+      <div class="deal-card__group">
+        <div class="deal-card__label">Регион</div>
+        <div class="deal-card__text">Пензенская область</div>
+      </div>
+      <div class="deal-card__group">
+        <div class="deal-card__label">Номер дела</div>
+        <div class="deal-card__text">А53-44457</div>
+      </div>
+      <div class="deal-card__group">
+        <div class="deal-card__label">Списано</div>
+        <div class="deal-card__text">546 975 р</div>
+      </div>
+    </div>
+
+    <a class="deal-card__link" target="_blank" href="#doc"  title="Посмотреть дело {{item.region}}">
+      <picture class="deal-card__picture">
+        <source
+          srcset=./img/deal.webp
+          type="image/webp"
+        />
+        <img src=./img/deal.png alt="Дело Пензенская область" />
+      </picture>
+    </a>
+  </div>
+</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+  </div>
+</section>
+        </main>
+        <footer class="footer">
+  <div class="container">
+    <div class="footer__top row">
+      <div class="col col-lg-8">
+        <div class="footer__title">
+          <a target="_blank" class="footer__logo logo" href="/">
+  <span class="visually-hidden">Перейти на главную</span>
+
+  <svg>
+    <use href="./img/sprites/sprite.svg#logo"></use>
+  </svg>
+</a>
+
+          <div class="footer__subtitle">
+            — сервис для людей, которые хотят большего
+          </div>
+        </div>
+
+        <a class="footer__btn btn btn_primary btn_big"
+          target="_blank"
+          href="#signup"
+          type="button"
+        >
+          Регистрация
+          <svg>
+            <use href="./img/sprites/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="col col-lg-4 d-flex flex-column">
+        <div class="footer__socials socials">
+  <a class="socials__link"
+  target="_blank"
+  href="#"
+  title="Перейти в наш Инстаграм"
+>
+  <span class="visually-hidden">Перейти в наш Инстаграм</span>
+  <svg>
+    <use href="./img/sprites/sprite.svg#ig"></use>
+  </svg>
+</a>
+<a class="socials__link"
+  target="_blank"
+  href="#"
+  title="Перейти в наш Телеграм"
+>
+  <span class="visually-hidden">Перейти в наш Телеграм</span>
+  <svg>
+    <use href="./img/sprites/sprite.svg#tg"></use>
+  </svg>
+</a>
+<a class="socials__link"
+  target="_blank"
+  href="#"
+  title="Перейти в наш Тикток"
+>
+  <span class="visually-hidden">Перейти в наш Тикток</span>
+  <svg>
+    <use href="./img/sprites/sprite.svg#tt"></use>
+  </svg>
+</a>
+
+</div>
+
+        <div class="footer__payments payments">
+  <div class="payments__text">Удобный формат оплаты</div>
+  <div class="payments__group">
+    <div class="payments__item">
+      <svg>
+        <use href="./img/sprites/sprite.svg#visa"></use>
+      </svg>
+    </div>
+    <div class="payments__item">
+      <svg>
+        <use href="./img/sprites/sprite.svg#maestro"></use>
+      </svg>
+    </div>
+    <div class="payments__item">
+      <picture>
+        <img src="./img/mir.png" alt="" />
+      </picture>
+    </div>
+    <div class="payments__item">
+      <picture>
+        <img src="./img/apay.png" alt="" />
+      </picture>
+    </div>
+    <div class="payments__item">
+      <svg>
+        <use href="./img/sprites/sprite.svg#giwi"></use>
+      </svg>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <div class="footer__middle">
+      <div class="footer__subtitle footer__subtitle_small">
+        Все, что нужно для вашего бизнеса
+      </div>
+      <ul class="footer__products row row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+  <li class="col product">
+  <a target="_blank" href="#" class="product__content">
+    <strong class="product__title">dev.force</strong>
+    <p class="product__description">
+      Разработка мобильных приложений и веб интрефейсов любой сложности!
+    </p>
+  </a>
+</li><li class="col product">
+  <a target="_blank" href="#" class="product__content">
+    <strong class="product__title">ads.force</strong>
+    <p class="product__description">
+      Маркетологи для эффективной рекламы
+    </p>
+  </a>
+</li><li class="col product">
+  <a target="_blank" href="#" class="product__content">
+    <strong class="product__title">lead.force</strong>
+    <p class="product__description">
+      Клиенты для вашего бизнеса
+    </p>
+  </a>
+</li><li class="col product">
+  <a target="_blank" href="#" class="product__content">
+    <strong class="product__title">skill.force</strong>
+    <p class="product__description">
+      Только актуальные курсы и востребованные профессии
+    </p>
+  </a>
+</li><li class="col product">
+  <a target="_blank" href="#" class="product__content">
+    <strong class="product__title">my.contact</strong>
+    <p class="product__description">
+      Профессиональные операторы для вашего бизнеса
+    </p>
+  </a>
+</li><li class="col product">
+  <a target="_blank" href="#" class="product__content">
+    <strong class="product__title">force.arbitr</strong>
+    <p class="product__description">
+      Арбитражное управление и юридическая помощь
+    </p>
+  </a>
+</li><li class="col product">
+  <a target="_blank" href="#" class="product__content">
+    <strong class="product__title">femida.force</strong>
+    <p class="product__description">
+      Успешные франшизы со стабильным доходом
+    </p>
+  </a>
+</li><li class="col product">
+  <a target="_blank" href="#" class="product__content">
+    <strong class="product__title">my.recruit</strong>
+    <p class="product__description">
+      Подбор квалифицированных специалистов в любой сфере
+    </p>
+  </a>
+</li>
+</ul>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__info row row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+  <div class="col info">
+    <div class="info__title">Горячая линия</div>
+    <div class="footer__contacts">
+      <a class="contact contact_primary js-phone" href="tel:+74951183934">
+  +74951183934
+</a>
+      <a class="contact contact_secondary js-phone" href="tel:+79034634944">
+  +79034634944
+</a>
+    </div>
+  </div>
+  <div class="col info">
+    <div class="info__title">Возник вопрос? Напишити нам</div>
+    <div class="footer__contacts">
+      <a class="contact contact_mail" href="mailto:general@myforce.ru">
+  general@myforce.ru
+</a>
+    </div>
+  </div>
+  <div class="col info">
+    <div class="info__title">Центральный офис</div>
+    <div class="info__text">
+      344038 г.Ростов-на-Дону,<br />Ворошиловский проспект 82/4<br />офис 99
+    </div>
+  </div>
+  <div class="col info">
+    <div class="info__title">Об организации</div>
+    <div class="info__text">ИНН: 6167130086</div>
+    <div class="info__text">ОГРН: 1156196049415</div>
+  </div>
+</div>
+
+
+      <ul class="footer__menu footer-menu">
+  <li class="footer-menu__item">
+    <a target="_blank" class="footer-menu__link" href="#">
+      Политика конфиденциальности
+    </a>
+  </li>
+  <li class="footer-menu__item">
+    <a target="_blank" class="footer-menu__link" href="#">
+      Согласие на обработку данных
+    </a>
+  </li>
+  <li class="footer-menu__item">
+    <a target="_blank" class="footer-menu__link" href="#">
+      Пользовательское соглашение
+    </a>
+  </li>
+</ul>
+    </div>
+  </div>
+</footer>
+        <div class="modal fade" id="headerMenu" tabindex="-1" aria-labelledby="headerMenuLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn btn_icon modal-close" data-bs-dismiss="modal" aria-label="Закрыть окно">
+          <div class="visually-hidden">Закрыть окно</div>
+          <svg>
+            <use href="./img/sprites/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a target="_blank" href="#login" class="btn btn_primary me-2">
+          Войти
+        </a>
+        <a target="_blank" href="#" class="btn btn_outline">
+          Регистрация
+        </a>
+      </div>
+      <div class="modal-footer">
+        <ul class="header-menu row row-cols-auto">
+  <li class="header-menu__item">
+  <a target="_blank" class="header-menu__link" href="#">
+    <svg>
+      <use href="./img/sprites/sprite.svg#bag"></use>
+    </svg>
+    <span>Франшиза</span>
+  </a>
+</li><li class="header-menu__item">
+  <a target="_blank" class="header-menu__link" href="#">
+    <svg>
+      <use href="./img/sprites/sprite.svg#document"></use>
+    </svg>
+    <span>Лидогенерация</span>
+  </a>
+</li><li class="header-menu__item">
+  <a target="_blank" class="header-menu__link" href="#">
+    <svg>
+      <use href="./img/sprites/sprite.svg#check"></use>
+    </svg>
+    <span>Обучение</span>
+  </a>
+</li><li class="header-menu__item">
+  <a target="_blank" class="header-menu__link" href="#">
+    <svg>
+      <use href="./img/sprites/sprite.svg#check"></use>
+    </svg>
+    <span>Арбитраж</span>
+  </a>
+</li><li class="header-menu__item">
+  <a target="_blank" class="header-menu__link" href="#">
+    <svg>
+      <use href="./img/sprites/sprite.svg#card"></use>
+    </svg>
+    <span>Клуб MYFORCE</span>
+  </a>
+</li>
+</ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="contactForm" tabindex="-1" aria-labelledby="contactFormLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="contactFormLabel">Форма для связи</div>
+        <button type="button" class="btn btn_icon modal-close" data-bs-dismiss="modal" aria-label="Закрыть окно">
+          <div class="visually-hidden">Закрыть окно</div>
+          <svg>
+            <use href="./img/sprites/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="" class="form">
+  <div class="from__group">
+    <label for="name" class="form__label">Ваше имя</label>
+    <input class="form__input" name="name" id="name" type="text" required>
+    <div class="form__feedback"></div>
+  </div>
+
+  <div class="from__group">
+    <label for="phone" class="form__label">Номер телефона</label>
+    <input class="form__input" name="phone" id="phone" type="text" required>
+    <div class="form__feedback"></div>
+  </div>
+
+  <button class="btn btn_primary btn_big" type="submit">Отправить</button>
+</form>
+      </div>
+      <div class="modal-preloader">
+        <div class="preloader-icon"><div></div><div></div><div></div><div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+        <script src="js/vendor.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

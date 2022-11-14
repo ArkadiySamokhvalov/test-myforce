@@ -1,0 +1,20 @@
+.swal2-container.swal2-center>.swal2-popup.swal2-modal {
+  @include cardBackground;
+}
+
+.swal2-title,
+.swal2-html-container {
+  color: $black !important;
+}
+
+.swal2-title {
+  font-size: torem(22) !important;
+}
+
+.swal2-html-container {
+  font-size: torem(16) !important;
+}
+
+.swal2-modal .swal2-styled.swal2-confirm {
+  @extend .btn_primary;
+}

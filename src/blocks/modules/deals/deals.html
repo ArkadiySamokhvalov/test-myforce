@@ -1,0 +1,15 @@
+<section class="section deals">
+  <div class="container">
+    <h2 class="section__title">Успешные дела</h2>
+    <div class="section__subtitle">Гарантируем 100% результат</div>
+
+    <div class="swiper" id="deals">
+      <div class="swiper-wrapper deals__cards row row-cols-sm-2 row-cols-lg-3 g-4">
+          @@loop("../deal-card/deal-card.html", "data/deals.json")
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+  </div>
+</section>

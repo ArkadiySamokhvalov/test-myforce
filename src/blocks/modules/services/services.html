@@ -1,0 +1,13 @@
+<section class="section services">
+  <div class="container">
+    <h2 class="section__title">Услуги арбитражных управляющих</h2>
+    <div class="section__subtitle">Вы можете выбрать отдельную услугу</div>
+
+    <div class="swiper" id="services">
+      <div class="swiper-wrapper services__list row row-cols-auto row-cols-md-2 row-cols-xl-3">
+        @@loop("./services__item.html", "data/services.json")
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section> 
