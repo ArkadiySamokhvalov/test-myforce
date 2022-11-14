@@ -33,6 +33,7 @@ function swiperCard() {
 
       dealsSwiper = new Swiper('#deals', {
         modules: [Pagination],
+        spaceBetween: 30,
         direction: 'horizontal',
         slidesPerView: 1,
         breakpoints: {
